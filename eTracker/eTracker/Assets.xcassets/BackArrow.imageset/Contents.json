@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "back_arrow_icon_131563.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

@@ -10,8 +10,11 @@ import SwiftUI
 struct CreatePlanView: View {
     var body: some View {
         NavigationView{
-            Text("CreatePlanView")
+            VStack{
+                HeaderView(title: "eTracker", subtitle: "Create Plan", bgColor: .black)
+            }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
