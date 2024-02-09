@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */; };
-		E333E8C12B7633DD00D6FEC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C02B7633DD00D6FEC5 /* ContentView.swift */; };
+		E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C02B7633DD00D6FEC5 /* LandingView.swift */; };
 		E333E8C32B7633DF00D6FEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */; };
 		E333E8C62B7633DF00D6FEC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333E8C52B7633DF00D6FEC5 /* Preview Assets.xcassets */; };
 		E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C72B7633DF00D6FEC5 /* Persistence.swift */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		E333E8BB2B7633DD00D6FEC5 /* eTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTrackerApp.swift; sourceTree = "<group>"; };
-		E333E8C02B7633DD00D6FEC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E333E8C02B7633DD00D6FEC5 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E333E8C52B7633DF00D6FEC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E333E8C72B7633DF00D6FEC5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			children = (
 				E333E8D32B763CEA00D6FEC5 /* EButton.swift */,
 				E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */,
-				E333E8C02B7633DD00D6FEC5 /* ContentView.swift */,
+				E333E8C02B7633DD00D6FEC5 /* LandingView.swift */,
 				E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */,
 				E333E8C72B7633DF00D6FEC5 /* Persistence.swift */,
 				E333E8C92B7633DF00D6FEC5 /* eTracker.xcdatamodeld */,
@@ -152,7 +152,7 @@
 				E333E8D42B763CEA00D6FEC5 /* EButton.swift in Sources */,
 				E333E8D62B76429D00D6FEC5 /* UIScreen+Utils.swift in Sources */,
 				E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */,
-				E333E8C12B7633DD00D6FEC5 /* ContentView.swift in Sources */,
+				E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */,
 				E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */,
 				E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */,
 			);

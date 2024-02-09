@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandingView.swift
 //  eTracker
 //
 //  Created by Carlos Gonçalves on 09/02/2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct LandingView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .center, content: {
@@ -42,11 +42,13 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 25)
             })
-        }.scrollIndicators(.hidden)
+        }
+        .scrollIndicators(.hidden)
+        .scrollBounceBehavior(.basedOnSize)
     }
 }
 
 
 #Preview {
-    ContentView()
+    LandingView()
 }
