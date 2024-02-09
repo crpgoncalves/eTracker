@@ -10,10 +10,8 @@ import CoreData
 
 struct LandingView: View {
     var body: some View {
-        ScrollView {
-            VStack(alignment: .center, content: {
-                Spacer()
-                    .frame(height: 50)
+        NavigationView {
+            VStack(alignment: .center, spacing: 25, content: {
                 Image("SplashHeader")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -22,29 +20,24 @@ struct LandingView: View {
                     }
                     .frame(maxWidth: 200)
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 25)
                 Text("eTracker")
                     .font(.largeTitle)
-                Spacer()
-                    .frame(height: 25)
                 Text("Plans everything")
                     .font(.title)
                 Spacer()
-                    .frame(height: 200)
-                EButton(title: "Create Plan") {
-                    print("Button Preview 1 pressed")
+                    .frame(height: 100)
+                NavigationLink(destination: CreatePlanView()) {
+                    EButton(title: "Create Plan")
                 }
-                Spacer()
-                    .frame(height: 25)
-                EButton(title: "Load Plan") {
-                    print("Button Preview 2 pressed")
+                NavigationLink(destination: CreatePlanView()) {
+                    EButton(title: "Load Plan")
                 }
-                Spacer()
-                    .frame(height: 25)
             })
         }
         .scrollIndicators(.hidden)
         .scrollBounceBehavior(.basedOnSize)
+        
     }
 }
 
