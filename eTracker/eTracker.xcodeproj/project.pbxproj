@@ -13,6 +13,8 @@
 		E333E8C62B7633DF00D6FEC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333E8C52B7633DF00D6FEC5 /* Preview Assets.xcassets */; };
 		E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C72B7633DF00D6FEC5 /* Persistence.swift */; };
 		E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C92B7633DF00D6FEC5 /* eTracker.xcdatamodeld */; };
+		E333E8D42B763CEA00D6FEC5 /* EButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8D32B763CEA00D6FEC5 /* EButton.swift */; };
+		E333E8D62B76429D00D6FEC5 /* UIScreen+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8D52B76429D00D6FEC5 /* UIScreen+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E333E8C52B7633DF00D6FEC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E333E8C72B7633DF00D6FEC5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E333E8CA2B7633DF00D6FEC5 /* eTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eTracker.xcdatamodel; sourceTree = "<group>"; };
+		E333E8D32B763CEA00D6FEC5 /* EButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EButton.swift; sourceTree = "<group>"; };
+		E333E8D52B76429D00D6FEC5 /* UIScreen+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		E333E8BD2B7633DD00D6FEC5 /* eTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E333E8D32B763CEA00D6FEC5 /* EButton.swift */,
 				E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */,
 				E333E8C02B7633DD00D6FEC5 /* ContentView.swift */,
 				E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */,
 				E333E8C72B7633DF00D6FEC5 /* Persistence.swift */,
 				E333E8C92B7633DF00D6FEC5 /* eTracker.xcdatamodeld */,
 				E333E8C42B7633DF00D6FEC5 /* Preview Content */,
+				E333E8D52B76429D00D6FEC5 /* UIScreen+Utils.swift */,
 			);
 			path = eTracker;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E333E8D42B763CEA00D6FEC5 /* EButton.swift in Sources */,
+				E333E8D62B76429D00D6FEC5 /* UIScreen+Utils.swift in Sources */,
 				E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */,
 				E333E8C12B7633DD00D6FEC5 /* ContentView.swift in Sources */,
 				E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */,
