@@ -8,14 +8,18 @@
 import Foundation
 import SwiftUI
 
-class NavigationHelper: ObservableObject {
-    static let shared = NavigationHelper()
+final class NavigationHelper: ObservableObject {
+    
+    public enum Destination: Codable, Hashable {
+        case createPlan
+        case loadPlan
+    }
     
     @Published var path = NavigationPath()
 
-    func clear() {
-        path = .init()
-    }
+//    func clear() {
+//        path = .init()
+//    }
     
     func navigateBackToRoot() {
         path.removeLast(path.count)
@@ -25,14 +29,11 @@ class NavigationHelper: ObservableObject {
         path.removeLast()
     }
     
-    func navigateToCreatePlan() {
-        path.append(eTrackerJourney.createPlan)
-    }
-    
-    func navigateToDrinkyIngredientsView() {
+    func navigateTo(_ destination: Destination) {
+        path.append(destination)
     }
 
-    func done() {
-        path = .init()
-    }
+//    func done() {
+//        path = .init()
+//    }
 }

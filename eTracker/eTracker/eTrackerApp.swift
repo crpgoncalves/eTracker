@@ -6,15 +6,30 @@
 //
 
 import SwiftUI
+import Foundation
 
 @main
 struct eTrackerApp: App {
+    
     let persistenceController = PersistenceController.shared
+    
+    @ObservedObject var navigationHelper = NavigationHelper()
 
     var body: some Scene {
         WindowGroup {
-            LandingView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationStack(path: $navigationHelper.path) {
+                LandingView()
+                    .navigationDestination(for: NavigationHelper.Destination.self) { destination in
+                        switch destination {
+                        case .createPlan:
+                            CreatePlanView()
+                        case .loadPlan:
+                            CreatePlanView()
+                        }
+                    }
+            }
+            .environmentObject(navigationHelper)
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

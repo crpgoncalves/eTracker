@@ -18,7 +18,6 @@
 		E333E8DF2B76760C00D6FEC5 /* EButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8DE2B76760C00D6FEC5 /* EButton.swift */; };
 		E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E02B76886800D6FEC5 /* HeaderView.swift */; };
 		E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */; };
-		E333E8E82B768B6F00D6FEC5 /* eTrackerJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E72B768B6F00D6FEC5 /* eTrackerJourney.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		E333E8DE2B76760C00D6FEC5 /* EButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EButton.swift; path = eTracker/EButton.swift; sourceTree = SOURCE_ROOT; };
 		E333E8E02B76886800D6FEC5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
-		E333E8E72B768B6F00D6FEC5 /* eTrackerJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTrackerJourney.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +65,11 @@
 		E333E8BD2B7633DD00D6FEC5 /* eTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */,
 				E333E8E42B768AA400D6FEC5 /* Navigation */,
 				E333E8D92B76659B00D6FEC5 /* Utils */,
 				E333E8D82B76658800D6FEC5 /* UIComponents */,
 				E333E8D72B76657D00D6FEC5 /* Screens */,
-				E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */,
 				E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */,
 				E333E8C72B7633DF00D6FEC5 /* Persistence.swift */,
 				E333E8C92B7633DF00D6FEC5 /* eTracker.xcdatamodeld */,
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */,
-				E333E8E72B768B6F00D6FEC5 /* eTrackerJourney.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -198,7 +195,6 @@
 				E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */,
 				E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */,
 				E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */,
-				E333E8E82B768B6F00D6FEC5 /* eTrackerJourney.swift in Sources */,
 				E333E8DB2B76660B00D6FEC5 /* CreatePlanView.swift in Sources */,
 				E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */,
 				E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */,
@@ -344,6 +340,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +370,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

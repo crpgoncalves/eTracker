@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HeaderView: View {
+    
+    @EnvironmentObject var navigationHelper: NavigationHelper
+
     let title: LocalizedStringKey
     let subtitle: LocalizedStringKey
     var bgColor: Color
@@ -24,10 +27,15 @@ struct HeaderView: View {
                     .shadow(radius: 10)
                 
                 HStack(alignment: .top) {
-                    Image(systemName: "arrow.left")
-                      .frame(width: 25, height: 25)
-                      .foregroundColor(.white)
-                      .padding()
+                    
+                    Button {
+                        navigationHelper.backToPrevious()
+                    } label: {
+                        Image(systemName: "arrow.left")
+                          .frame(width: 25, height: 25)
+                          .foregroundColor(.white)
+                          .padding()
+                    }
                     VStack(alignment: .leading) {
                         Text(self.title)
                             .font(.title)

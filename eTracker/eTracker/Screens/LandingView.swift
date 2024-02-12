@@ -9,6 +9,9 @@ import SwiftUI
 import CoreData
 
 struct LandingView: View {
+    
+    @EnvironmentObject var navigationHelper: NavigationHelper
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 25, content: {
@@ -26,17 +29,21 @@ struct LandingView: View {
                 Text("Plans everything")
                     .font(.title)
                 Spacer()
-                    .frame(height: 100)
-                NavigationLink(destination: CreatePlanView()) {
-                    EButton(title: "Create Plan")
+                EButton(title: "Create Plan") {
+                    //avPath.append(.)
+                    navigationHelper.navigateTo(.createPlan)
                 }
-                NavigationLink(destination: CreatePlanView()) {
-                    EButton(title: "Load Plan")
+                EButton(title: "Load Plan") {
+                    
                 }
             })
         }
         .scrollIndicators(.hidden)
-        .scrollBounceBehavior(.basedOnSize)
+//        if #available(iOS 16.4, *) {
+//            .scrollBounceBehavior(.basedOnSize)
+//        } else {
+//            .scrollBounceBehavior(.disabled)
+//        }
         
     }
 }
