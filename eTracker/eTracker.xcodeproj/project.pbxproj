@@ -89,8 +89,8 @@
 		E333E8D72B76657D00D6FEC5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				E333E8E02B76886800D6FEC5 /* HeaderView.swift */,
 				E333E8C02B7633DD00D6FEC5 /* LandingView.swift */,
+				E333E8E02B76886800D6FEC5 /* HeaderView.swift */,
 				E333E8DA2B76660B00D6FEC5 /* CreatePlanView.swift */,
 			);
 			path = Screens;

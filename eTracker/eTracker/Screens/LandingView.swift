@@ -14,37 +14,33 @@ struct LandingView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .center, spacing: 25, content: {
-                Image("SplashHeader")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .overlay {
-                        Circle().stroke(.gray, lineWidth: 0)
+            ScrollView {
+                VStack(alignment: .center, spacing: 25, content: {
+                    Spacer()
+                        .frame(height: 25)
+                    Image("SplashHeader")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: 200)
+                        .shadow(radius: 15)
+                    Spacer()
+                        .frame(height: 25)
+                    Text("eTracker")
+                        .font(.largeTitle)
+                    Text("Plans everything")
+                        .font(.title)
+                    Spacer()
+                        .frame(height: 150)
+                    EButton(title: "Create Plan") {
+                        navigationHelper.navigateTo(.createPlan)
                     }
-                    .frame(maxWidth: 200)
-                Spacer()
-                    .frame(height: 25)
-                Text("eTracker")
-                    .font(.largeTitle)
-                Text("Plans everything")
-                    .font(.title)
-                Spacer()
-                EButton(title: "Create Plan") {
-                    //avPath.append(.)
-                    navigationHelper.navigateTo(.createPlan)
-                }
-                EButton(title: "Load Plan") {
-                    
-                }
-            })
+                    EButton(title: "Load Plan") {
+                        
+                    }
+                })
+            }
         }
         .scrollIndicators(.hidden)
-//        if #available(iOS 16.4, *) {
-//            .scrollBounceBehavior(.basedOnSize)
-//        } else {
-//            .scrollBounceBehavior(.disabled)
-//        }
-        
     }
 }
 
