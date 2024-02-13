@@ -35,7 +35,7 @@ struct LandingView: View {
                         navigationHelper.navigateTo(.createPlan)
                     }
                     EButton(title: "Load Plan") {
-                        
+                        navigationHelper.navigateTo(.loadPlan)
                     }
                 })
             }

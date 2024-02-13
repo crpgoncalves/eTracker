@@ -12,11 +12,12 @@ struct EButtonStyle: ButtonStyle {
         configuration.label
             .padding()
             .background(.black)
-            .foregroundStyle(.white)
             .clipShape(Capsule())
-            .scaleEffect(configuration.isPressed ? 1.2 : 1)
+            .foregroundStyle(.white)
+            .scaleEffect(configuration.isPressed ? 1.1 : 1)
             .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
-            .shadow(radius: 15)
+            .shadow(radius: 10)
+            
     }
 }
 
@@ -30,8 +31,8 @@ struct EButton: View {
             action()
         } label: {
             Text(title)
-                .frame(maxWidth: UIScreen.screenWidth - 100)
-        }
+                .frame(maxWidth: UIScreen.screenWidth - 150)
+        }            
         .buttonStyle(EButtonStyle())
     }
 }

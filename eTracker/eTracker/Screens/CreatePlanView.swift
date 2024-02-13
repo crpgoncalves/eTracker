@@ -12,6 +12,7 @@ struct CreatePlanView: View {
         NavigationView{
             VStack{
                 HeaderView(title: "eTracker", subtitle: "Create Plan", bgColor: .black)
+                    .background(.red)
             }
         }
         .navigationBarBackButtonHidden()
