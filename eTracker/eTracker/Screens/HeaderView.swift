@@ -51,7 +51,8 @@ struct HeaderView: View {
                 }
                 .padding(.leading, geometry.size.width * 0.04)
                 .padding(.top, geometry.size.height * 0.08)
-            }.edgesIgnoringSafeArea(.all)
+            }
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }

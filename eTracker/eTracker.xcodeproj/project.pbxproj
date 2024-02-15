@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EC5153EF3948932627A1DA2 /* Pods_eTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27965C555EE14F3E479D0593 /* Pods_eTracker.framework */; };
 		E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */; };
 		E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C02B7633DD00D6FEC5 /* LandingView.swift */; };
 		E333E8C32B7633DF00D6FEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */; };
@@ -18,9 +19,14 @@
 		E333E8DF2B76760C00D6FEC5 /* EButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8DE2B76760C00D6FEC5 /* EButton.swift */; };
 		E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E02B76886800D6FEC5 /* HeaderView.swift */; };
 		E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */; };
+		E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE652B7E5B7500A25036 /* AddEventView.swift */; };
+		E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE672B7E5C5800A25036 /* ETextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C8C38B178CEC2046F5D531A /* Pods-eTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTracker.release.xcconfig"; path = "Target Support Files/Pods-eTracker/Pods-eTracker.release.xcconfig"; sourceTree = "<group>"; };
+		27965C555EE14F3E479D0593 /* Pods_eTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96CACA5C7166CF3EB0A0A12 /* Pods-eTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTracker.debug.xcconfig"; path = "Target Support Files/Pods-eTracker/Pods-eTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		E333E8BB2B7633DD00D6FEC5 /* eTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTrackerApp.swift; sourceTree = "<group>"; };
 		E333E8C02B7633DD00D6FEC5 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -33,6 +39,8 @@
 		E333E8DE2B76760C00D6FEC5 /* EButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EButton.swift; path = eTracker/EButton.swift; sourceTree = SOURCE_ROOT; };
 		E333E8E02B76886800D6FEC5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		E3ADDE652B7E5B7500A25036 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		E3ADDE672B7E5C5800A25036 /* ETextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC5153EF3948932627A1DA2 /* Pods_eTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A29A95A4B6861D12FFBD96C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B96CACA5C7166CF3EB0A0A12 /* Pods-eTracker.debug.xcconfig */,
+				0C8C38B178CEC2046F5D531A /* Pods-eTracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D50CEBC3350E94D774281057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27965C555EE14F3E479D0593 /* Pods_eTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E333E8B22B7633DD00D6FEC5 = {
 			isa = PBXGroup;
 			children = (
 				E333E8BD2B7633DD00D6FEC5 /* eTracker */,
 				E333E8BC2B7633DD00D6FEC5 /* Products */,
+				A29A95A4B6861D12FFBD96C7 /* Pods */,
+				D50CEBC3350E94D774281057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +120,7 @@
 				E333E8C02B7633DD00D6FEC5 /* LandingView.swift */,
 				E333E8E02B76886800D6FEC5 /* HeaderView.swift */,
 				E333E8DA2B76660B00D6FEC5 /* CreatePlanView.swift */,
+				E3ADDE652B7E5B7500A25036 /* AddEventView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -100,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				E333E8DE2B76760C00D6FEC5 /* EButton.swift */,
+				E3ADDE672B7E5C5800A25036 /* ETextField.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -127,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E333E8CE2B7633DF00D6FEC5 /* Build configuration list for PBXNativeTarget "eTracker" */;
 			buildPhases = (
+				DBC3858A92381ABA029A7B00 /* [CP] Check Pods Manifest.lock */,
 				E333E8B72B7633DD00D6FEC5 /* Sources */,
 				E333E8B82B7633DD00D6FEC5 /* Frameworks */,
 				E333E8B92B7633DD00D6FEC5 /* Resources */,
+				78017503719A016A5C8C3BCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +217,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78017503719A016A5C8C3BCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eTracker/Pods-eTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eTracker/Pods-eTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eTracker/Pods-eTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBC3858A92381ABA029A7B00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E333E8B72B7633DD00D6FEC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -195,7 +269,9 @@
 				E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */,
 				E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */,
 				E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */,
+				E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */,
 				E333E8DB2B76660B00D6FEC5 /* CreatePlanView.swift in Sources */,
+				E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */,
 				E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */,
 				E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */,
 				E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */,
@@ -242,7 +318,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -305,7 +381,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -326,6 +402,7 @@
 		};
 		E333E8CF2B7633DF00D6FEC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96CACA5C7166CF3EB0A0A12 /* Pods-eTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -356,6 +433,7 @@
 		};
 		E333E8D02B7633DF00D6FEC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8C38B178CEC2046F5D531A /* Pods-eTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

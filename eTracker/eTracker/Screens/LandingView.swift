@@ -27,7 +27,7 @@ struct LandingView: View {
                         .frame(height: 25)
                     Text("eTracker")
                         .font(.largeTitle)
-                    Text("Plans everything")
+                    Text("abc")
                         .font(.title)
                     Spacer()
                         .frame(height: 150)
