@@ -17,14 +17,14 @@ struct AddEventView: View {
             VStack {
                 ZStack {
                     HeaderView(title: "eTracker",
-                               subtitle: "Create Plan",
+                               subtitle: "Create Event",
                                bgColor: .black)
                     MCalendarView(selectedDate: $selectedDate, selectedRange: $selectedRange)
                         .padding(.top, 150)
                         .padding(.bottom, 20)
 
                 }
-                EButton(title: "Create") {
+                EButton(title: "Add Event") {
                 }
             }
         }

@@ -21,6 +21,7 @@
 		E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */; };
 		E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE652B7E5B7500A25036 /* AddEventView.swift */; };
 		E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE672B7E5C5800A25036 /* ETextField.swift */; };
+		E3ADDE6A2B7E70FE00A25036 /* EDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE692B7E70FE00A25036 /* EDropDown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		E3ADDE652B7E5B7500A25036 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		E3ADDE672B7E5C5800A25036 /* ETextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETextField.swift; sourceTree = "<group>"; };
+		E3ADDE692B7E70FE00A25036 /* EDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDropDown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				E333E8DE2B76760C00D6FEC5 /* EButton.swift */,
 				E3ADDE672B7E5C5800A25036 /* ETextField.swift */,
+				E3ADDE692B7E70FE00A25036 /* EDropDown.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */,
 				E333E8DB2B76660B00D6FEC5 /* CreatePlanView.swift in Sources */,
 				E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */,
+				E3ADDE6A2B7E70FE00A25036 /* EDropDown.swift in Sources */,
 				E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */,
 				E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */,
 				E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */,

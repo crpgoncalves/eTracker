@@ -31,8 +31,9 @@ struct EButton: View {
             action()
         } label: {
             Text(title)
-                .frame(maxWidth: UIScreen.screenWidth - 150)
-        }            
+                .frame(maxWidth: UIScreen.screenWidth)
+        }
+        .padding()
         .buttonStyle(EButtonStyle())
     }
 }

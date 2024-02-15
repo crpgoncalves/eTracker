@@ -24,7 +24,7 @@ struct eTrackerApp: App {
                         case .createPlan:
                             CreatePlanView()
                         case .loadPlan:
-                            CreatePlanView()
+                            AddEventView()
                         }
                     }
             }

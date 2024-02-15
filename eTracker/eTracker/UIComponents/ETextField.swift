@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+private struct customViewModifier: ViewModifier {
+    var roundedCornes: CGFloat
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .cornerRadius(roundedCornes)
+            .overlay(RoundedRectangle(cornerRadius: roundedCornes)
+                .stroke(.black, lineWidth: 1.5))
+            .shadow(radius: 10)
+    }
+}
+
 struct ETextField: View {
     var placeholder: LocalizedStringKey
     @State var text = ""
@@ -17,18 +29,6 @@ struct ETextField: View {
                 .modifier(customViewModifier(roundedCornes: 15))
         }
         .padding()
-    }
-}
-
-private struct customViewModifier: ViewModifier {
-    var roundedCornes: CGFloat
-    func body(content: Content) -> some View {
-        content
-            .padding()
-            .cornerRadius(roundedCornes)
-            .overlay(RoundedRectangle(cornerRadius: roundedCornes)
-                .stroke(.black, lineWidth: 1.5))
-            .shadow(radius: 10)
     }
 }
 

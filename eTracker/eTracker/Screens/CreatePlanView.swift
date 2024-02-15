@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CreatePlanView: View {
+    @State var selection1: String? = nil
+    
     var body: some View {
         NavigationView{
             
@@ -17,15 +19,25 @@ struct CreatePlanView: View {
                                subtitle: "Create Plan",
                                bgColor: .black)
                     VStack {
-                        ETextField(placeholder: "Teste....")
-                        ETextField(placeholder: "Teste1....")
-                        ETextField(placeholder: "Teste2....")
+                        ETextField(placeholder: "Name it")
+                        EDropDown(
+                            selection: $selection1,
+                            options: [
+                                "Apple",
+                                "Google",
+                                "Amazon",
+                                "Facebook",
+                                "Instagram"
+                            ]
+                        )
+                        Spacer()
+                            .frame(height: 40)
                         Spacer()
                         EButton(title: "Create") {
                         }
                     }
                     .padding(.top, 150)
-
+                    
                 }
             }
         }
