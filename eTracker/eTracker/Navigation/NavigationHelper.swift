@@ -13,13 +13,10 @@ final class NavigationHelper: ObservableObject {
     public enum Destination: Codable, Hashable {
         case createPlan
         case loadPlan
+        case listPlans
     }
     
     @Published var path = NavigationPath()
-
-//    func clear() {
-//        path = .init()
-//    }
     
     func navigateBackToRoot() {
         path.removeLast(path.count)
@@ -33,7 +30,4 @@ final class NavigationHelper: ObservableObject {
         path.append(destination)
     }
 
-//    func done() {
-//        path = .init()
-//    }
 }

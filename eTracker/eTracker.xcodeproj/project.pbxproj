@@ -21,8 +21,11 @@
 		E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */; };
 		E354BB292B84A6080016EA48 /* ETextFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB282B84A6080016EA48 /* ETextFormView.swift */; };
 		E354BB2B2B84ADCB0016EA48 /* String+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */; };
+		E354BB2E2B84BE5C0016EA48 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB2D2B84BE5C0016EA48 /* Plan.swift */; };
+		E36EAE052B8501F900BE2B50 /* ListPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36EAE042B8501F900BE2B50 /* ListPlansView.swift */; };
+		E36EAE072B8503C800BE2B50 /* TaskConfigurationTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36EAE062B8503C800BE2B50 /* TaskConfigurationTransformer.swift */; };
 		E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE652B7E5B7500A25036 /* AddEventView.swift */; };
-		E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE672B7E5C5800A25036 /* ETextField.swift */; };
+		E3ADDE682B7E5C5800A25036 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE672B7E5C5800A25036 /* TextFieldModifier.swift */; };
 		E3ADDE6A2B7E70FE00A25036 /* EDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE692B7E70FE00A25036 /* EDropDown.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +47,11 @@
 		E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		E354BB282B84A6080016EA48 /* ETextFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETextFormView.swift; sourceTree = "<group>"; };
 		E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validate.swift"; sourceTree = "<group>"; };
+		E354BB2D2B84BE5C0016EA48 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		E36EAE042B8501F900BE2B50 /* ListPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlansView.swift; sourceTree = "<group>"; };
+		E36EAE062B8503C800BE2B50 /* TaskConfigurationTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskConfigurationTransformer.swift; sourceTree = "<group>"; };
 		E3ADDE652B7E5B7500A25036 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
-		E3ADDE672B7E5C5800A25036 /* ETextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETextField.swift; sourceTree = "<group>"; };
+		E3ADDE672B7E5C5800A25036 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		E3ADDE692B7E70FE00A25036 /* EDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDropDown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +105,7 @@
 		E333E8BD2B7633DD00D6FEC5 /* eTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E354BB2C2B84BE450016EA48 /* Data */,
 				E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */,
 				E333E8E42B768AA400D6FEC5 /* Navigation */,
 				E333E8D92B76659B00D6FEC5 /* Utils */,
@@ -127,6 +134,7 @@
 				E333E8E02B76886800D6FEC5 /* HeaderView.swift */,
 				E333E8DA2B76660B00D6FEC5 /* CreatePlanView.swift */,
 				E3ADDE652B7E5B7500A25036 /* AddEventView.swift */,
+				E36EAE042B8501F900BE2B50 /* ListPlansView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -135,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				E333E8DE2B76760C00D6FEC5 /* EButton.swift */,
-				E3ADDE672B7E5C5800A25036 /* ETextField.swift */,
+				E3ADDE672B7E5C5800A25036 /* TextFieldModifier.swift */,
 				E3ADDE692B7E70FE00A25036 /* EDropDown.swift */,
 				E354BB282B84A6080016EA48 /* ETextFormView.swift */,
 			);
@@ -157,6 +165,15 @@
 				E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E354BB2C2B84BE450016EA48 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E354BB2D2B84BE5C0016EA48 /* Plan.swift */,
+				E36EAE062B8503C800BE2B50 /* TaskConfigurationTransformer.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,17 +293,20 @@
 				E333E8DF2B76760C00D6FEC5 /* EButton.swift in Sources */,
 				E333E8D62B76429D00D6FEC5 /* UIScreen+Utils.swift in Sources */,
 				E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */,
+				E36EAE052B8501F900BE2B50 /* ListPlansView.swift in Sources */,
 				E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */,
 				E354BB2B2B84ADCB0016EA48 /* String+Validate.swift in Sources */,
 				E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */,
 				E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */,
 				E333E8DB2B76660B00D6FEC5 /* CreatePlanView.swift in Sources */,
-				E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */,
+				E3ADDE682B7E5C5800A25036 /* TextFieldModifier.swift in Sources */,
 				E3ADDE6A2B7E70FE00A25036 /* EDropDown.swift in Sources */,
 				E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */,
 				E354BB292B84A6080016EA48 /* ETextFormView.swift in Sources */,
 				E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */,
 				E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */,
+				E354BB2E2B84BE5C0016EA48 /* Plan.swift in Sources */,
+				E36EAE072B8503C800BE2B50 /* TaskConfigurationTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

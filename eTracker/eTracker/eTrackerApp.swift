@@ -11,8 +11,7 @@ import Foundation
 @main
 struct eTrackerApp: App {
     
-    let persistenceController = PersistenceController.shared
-    
+    @StateObject private var dataController = DataController()
     @ObservedObject var navigationHelper = NavigationHelper()
 
     var body: some Scene {
@@ -25,11 +24,13 @@ struct eTrackerApp: App {
                             CreatePlanView()
                         case .loadPlan:
                             AddEventView()
+                        case .listPlans:
+                            ListPlansView()
                         }
                     }
             }
             .environmentObject(navigationHelper)
-            .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
