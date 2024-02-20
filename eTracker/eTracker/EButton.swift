@@ -25,7 +25,6 @@ struct EButton: View {
     var title: String
     var action: () -> Void
     var body: some View {
-        
         Button {
             print("Button \(title) pressed")
             action()

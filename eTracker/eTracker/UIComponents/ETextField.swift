@@ -7,31 +7,48 @@
 
 import SwiftUI
 
-private struct customViewModifier: ViewModifier {
-    var roundedCornes: CGFloat
+
+struct CustomTFViewModifier: ViewModifier {
+    var text: String
     func body(content: Content) -> some View {
         content
             .padding()
-            .cornerRadius(roundedCornes)
-            .overlay(RoundedRectangle(cornerRadius: roundedCornes)
-                .stroke(.black, lineWidth: 1.5))
+            .cornerRadius(15)
+            .overlay(RoundedRectangle(cornerRadius: 15)
+                .stroke(StringValidator.colorFromState(text.validationState()), lineWidth: 1.5))
             .shadow(radius: 10)
     }
 }
 
-struct ETextField: View {
-    var placeholder: LocalizedStringKey
-    @State var text = ""
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            TextField(placeholder, text: $text)
-                .modifier(customViewModifier(roundedCornes: 15))
-        }
-        .padding()
+extension TextField   {
+    func validate(_ flag : @escaping ()-> Bool) -> some View {
+        self
+            .modifier(ValidationModifier(validation: flag))
     }
 }
 
-#Preview {
-    ETextField(placeholder: "Placeholder...")
+extension SecureField   {
+    func validate(_ flag : @escaping ()-> Bool) -> some View {
+        self
+            .modifier(ValidationModifier(validation: flag))
+    }
+}
+
+struct ValidationPreferenceKey : PreferenceKey {
+    static var defaultValue: [Bool] = []
+    
+    static func reduce(value: inout [Bool], nextValue: () -> [Bool]) {
+        value += nextValue()
+    }
+}
+
+struct ValidationModifier : ViewModifier  {
+    let validation : () -> Bool
+    func body(content: Content) -> some View {
+        content
+            .preference(
+                key: ValidationPreferenceKey.self,
+                value: [validation()]
+            )
+    }
 }

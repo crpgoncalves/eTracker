@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CreatePlanView: View {
     @State var selection1: String? = nil
+    @State var name : String = ""
     
     var body: some View {
         NavigationView{
@@ -19,7 +20,16 @@ struct CreatePlanView: View {
                                subtitle: "Create Plan",
                                bgColor: .black)
                     VStack {
-                        ETextField(placeholder: "Name it")
+                        TextFormView { validate in
+                            VStack {
+                                TextField("name it", text: $name)
+                                    .validate {
+                                        name.validationState() == .valid
+                                    }
+                                    .modifier(CustomTFViewModifier(text: name))
+                            }
+                            .padding()
+                        }
                         EDropDown(
                             selection: $selection1,
                             options: [

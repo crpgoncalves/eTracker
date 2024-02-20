@@ -19,6 +19,8 @@
 		E333E8DF2B76760C00D6FEC5 /* EButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8DE2B76760C00D6FEC5 /* EButton.swift */; };
 		E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E02B76886800D6FEC5 /* HeaderView.swift */; };
 		E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */; };
+		E354BB292B84A6080016EA48 /* ETextFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB282B84A6080016EA48 /* ETextFormView.swift */; };
+		E354BB2B2B84ADCB0016EA48 /* String+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */; };
 		E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE652B7E5B7500A25036 /* AddEventView.swift */; };
 		E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE672B7E5C5800A25036 /* ETextField.swift */; };
 		E3ADDE6A2B7E70FE00A25036 /* EDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE692B7E70FE00A25036 /* EDropDown.swift */; };
@@ -40,6 +42,8 @@
 		E333E8DE2B76760C00D6FEC5 /* EButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EButton.swift; path = eTracker/EButton.swift; sourceTree = SOURCE_ROOT; };
 		E333E8E02B76886800D6FEC5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		E354BB282B84A6080016EA48 /* ETextFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETextFormView.swift; sourceTree = "<group>"; };
+		E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validate.swift"; sourceTree = "<group>"; };
 		E3ADDE652B7E5B7500A25036 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		E3ADDE672B7E5C5800A25036 /* ETextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETextField.swift; sourceTree = "<group>"; };
 		E3ADDE692B7E70FE00A25036 /* EDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDropDown.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				E333E8DE2B76760C00D6FEC5 /* EButton.swift */,
 				E3ADDE672B7E5C5800A25036 /* ETextField.swift */,
 				E3ADDE692B7E70FE00A25036 /* EDropDown.swift */,
+				E354BB282B84A6080016EA48 /* ETextFormView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E333E8D52B76429D00D6FEC5 /* UIScreen+Utils.swift */,
+				E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -271,12 +277,14 @@
 				E333E8D62B76429D00D6FEC5 /* UIScreen+Utils.swift in Sources */,
 				E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */,
 				E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */,
+				E354BB2B2B84ADCB0016EA48 /* String+Validate.swift in Sources */,
 				E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */,
 				E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */,
 				E333E8DB2B76660B00D6FEC5 /* CreatePlanView.swift in Sources */,
 				E3ADDE682B7E5C5800A25036 /* ETextField.swift in Sources */,
 				E3ADDE6A2B7E70FE00A25036 /* EDropDown.swift in Sources */,
 				E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */,
+				E354BB292B84A6080016EA48 /* ETextFormView.swift in Sources */,
 				E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */,
 				E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */,
 			);
