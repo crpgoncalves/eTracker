@@ -20,18 +20,22 @@ struct ListPlansView: View {
                     HeaderView(title: "eTracker",
                                subtitle: "List Plans",
                                bgColor: .black)
-                    List(plans) {
-                        Text($0.name ?? "")
+                    VStack {
+                        List(plans) {
+                            Text($0.name ?? "")
+                        }
+                        EButton(title: "Add Event") {
+                            let plan = Plan(context: moc)
+                            plan.name = "nome"
+                            plan.tasks = Task()
+                            do {
+                                try moc.save()
+                            } catch {
+                                // handle the Core Data error
+                            }
+                        }
                     }
-                    EButton(title: "Add Event") {
-                        let plan = Plan(context: moc)
-                        plan.name = "nome"
-                        plan.tasks = Task()
-                        do {
-                            try moc.save()
-                        } catch {
-                            // handle the Core Data error
-                        }                    }
+                    
                 }
             }
         }
