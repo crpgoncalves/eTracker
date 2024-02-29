@@ -14,16 +14,29 @@ func plansMiddleware() -> Middleware<AppState> {
         switch action {
         case _ as LoadPlans:
             if let plan: [Plan] = DataController.shared.fetchPlans() {
-                dispatch(SetPlan(plan: plan))
+                dispatch(AddPlan(plan: plan))
             }
-
+            
         case let action as SavePlan:
-            try? DataController.shared.createNewPlan(action.name)
-            dispatch(LoadPlans())
+            DataController.shared.createNewPlan(action.name) { result in
+                
+                switch result {
+                case .success(let plan):
+                    
+                    if let plan = plan {
+                        dispatch(AddPlan(plan: [plan]))
+                        
+                    }
+                    
+                case .failure(let error):
+                    print("[plansMiddleware] - \(error.localizedDescription)")
+                }
+                
+            }
+            
         default:
             break
         }
         
     }
-    
 }

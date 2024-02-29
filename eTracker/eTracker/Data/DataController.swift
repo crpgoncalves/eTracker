@@ -14,6 +14,10 @@ class DataController {
         return DataController()
     }()
     
+    private var context: NSManagedObjectContext {
+        return DataController.container.viewContext
+    }
+    
     init() {
         
         ValueTransformer.setValueTransformer(TaskConfigurationTransformer(),
@@ -30,33 +34,48 @@ class DataController {
         
         let request = NSFetchRequest<Plan>(entityName: "Plan")
                 
-        let operatorentity = try? DataController.container.viewContext.fetch(request)
+        let operatorentity = try? context.fetch(request)
         
         return operatorentity
         
     }
     
-    func delete<T:NSFetchRequestResult>(data:T) throws {
+    func delete<T:NSFetchRequestResult>(data:T) throws -> (Result<Bool?, Error>) {
         
-        DataController.container.viewContext.delete(data as! NSManagedObject)
+        context.delete(data as! NSManagedObject)
 
-        try saveContext()
+        return try saveContext()
         
     }
     
 
-    func createNewPlan(_ name: String) throws {
+    func createNewPlan(_ name: String, completion: @escaping (Result<Plan?, Error>) -> Void){
         
-        let newPlan = Plan(context: DataController.container.viewContext)
-        
+        let newPlan = Plan(context: context)
         newPlan.name = name
-                
-        try saveContext()
+        
+        do {
+            let result = try saveContext()
+            completion(.success(newPlan))
+        } catch {
+            completion(.failure(error))
+        }
     }
         
-    func saveContext() throws{
+    func saveContext() throws -> (Result<Bool?, Error>) {
         
-        try DataController.container.viewContext.save()
+        if context.hasChanges {
+            do {
+                try context.save()
+                return .success(true)
+            } catch {
+                print(error.localizedDescription)
+                return .failure(error)
+            }
+        }
+        
+        print("[DataController] no changes found on context.")
+        return .success(false)
         
     }
 }

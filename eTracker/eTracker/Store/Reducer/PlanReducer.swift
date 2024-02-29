@@ -13,8 +13,8 @@ func planReducer(_ state: PlansState, _ action: Action) -> PlansState {
     var state = state
     
     switch action {
-    case let action as SetPlan:
-        state.plan = action.plan
+    case let action as AddPlan:
+        state.plan.append(contentsOf: action.plan)
     default:
         break
     }

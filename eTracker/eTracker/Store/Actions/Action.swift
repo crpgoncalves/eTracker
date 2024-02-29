@@ -13,7 +13,7 @@ struct LoadPlans: Action {
     
 }
 
-struct SetPlan: Action {
+struct AddPlan: Action {
     let plan: [Plan]
 }
 
