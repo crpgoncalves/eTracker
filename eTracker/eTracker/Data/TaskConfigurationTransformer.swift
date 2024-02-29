@@ -14,7 +14,7 @@ class TaskConfigurationTransformer: ValueTransformer {
             print("\(#function) cast issue")
             return nil
         }
-
+        
         do {
             let data = try NSKeyedArchiver.archivedData(withRootObject: taskConfiguration, requiringSecureCoding: true)
             return data
@@ -23,18 +23,21 @@ class TaskConfigurationTransformer: ValueTransformer {
             return nil
         }
     }
-
+    
     override func reverseTransformedValue(_ value: Any?) -> Any? {
         guard let data = value as? Data else {
             print("\(#function) nil data value")
             return nil
         }
-
+        
         do {
             let taskConfiguration = try NSKeyedUnarchiver
                 .unarchivedObject(ofClasses: [
-                    Task.self, NSDictionary.self,
-                    NSArray.self, NSString.self, NSNumber.self],
+                    Task.self,
+                    NSDictionary.self,
+                    NSArray.self,
+                    NSString.self,
+                    NSNumber.self],
                                   from: data)
             return taskConfiguration
         } catch {

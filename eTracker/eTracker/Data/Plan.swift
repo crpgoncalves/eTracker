@@ -6,14 +6,12 @@
 //
 
 import Foundation
+import CoreData
 
-//struct Plan {
-//    var name: String
-//    var tasks : Task
-//}
-//
-//struct Task {
-//    var name: String
-//    var description: String?
-//    var date: Date
-//}
+extension Plan {
+    
+    func copyInEntity(plan: Plan){
+        name = plan.name
+        type = plan.type
+    }
+}

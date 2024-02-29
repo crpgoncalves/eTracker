@@ -13,22 +13,20 @@ struct AddEventView: View {
     @State private var selectedRange: MDateRange? = .init()
     
     var body: some View {
-        NavigationView{
-            VStack {
-                ZStack {
-                    HeaderView(title: "eTracker",
-                               subtitle: "Create Event",
-                               bgColor: .black)
-                    MCalendarView(selectedDate: $selectedDate, selectedRange: $selectedRange)
-                        .padding(.top, 150)
-                        .padding(.bottom, 20)
-
-                }
-                EButton(title: "Add Event") {
-                }
+        VStack {
+            ZStack {
+                HeaderView(title: "eTracker",
+                           subtitle: "Create Event",
+                           bgColor: .black)
+                MCalendarView(selectedDate: $selectedDate, selectedRange: $selectedRange)
+                    .padding(.top, 150)
+                    .padding(.bottom, 20)
+                
+            }
+            EButton(title: "Add Event") {
             }
         }
-        .navigationBarBackButtonHidden()
+        .embedInNavigationView()
     }
 }
 

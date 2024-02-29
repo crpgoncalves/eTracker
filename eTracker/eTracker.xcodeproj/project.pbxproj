@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3EC5153EF3948932627A1DA2 /* Pods_eTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27965C555EE14F3E479D0593 /* Pods_eTracker.framework */; };
+		E3318EE02B9092DB00647C36 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3318EDF2B9092DB00647C36 /* View+Extensions.swift */; };
 		E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */; };
 		E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C02B7633DD00D6FEC5 /* LandingView.swift */; };
 		E333E8C32B7633DF00D6FEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */; };
 		E333E8C62B7633DF00D6FEC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333E8C52B7633DF00D6FEC5 /* Preview Assets.xcassets */; };
-		E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C72B7633DF00D6FEC5 /* Persistence.swift */; };
+		E333E8C82B7633DF00D6FEC5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C72B7633DF00D6FEC5 /* DataController.swift */; };
 		E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E333E8C92B7633DF00D6FEC5 /* eTracker.xcdatamodeld */; };
-		E333E8D62B76429D00D6FEC5 /* UIScreen+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8D52B76429D00D6FEC5 /* UIScreen+Utils.swift */; };
+		E333E8D62B76429D00D6FEC5 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8D52B76429D00D6FEC5 /* UIScreen+Extensions.swift */; };
 		E333E8DB2B76660B00D6FEC5 /* CreatePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8DA2B76660B00D6FEC5 /* CreatePlanView.swift */; };
 		E333E8DF2B76760C00D6FEC5 /* EButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8DE2B76760C00D6FEC5 /* EButton.swift */; };
 		E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E02B76886800D6FEC5 /* HeaderView.swift */; };
 		E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */; };
 		E354BB292B84A6080016EA48 /* ETextFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB282B84A6080016EA48 /* ETextFormView.swift */; };
-		E354BB2B2B84ADCB0016EA48 /* String+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */; };
+		E354BB2B2B84ADCB0016EA48 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB2A2B84ADCB0016EA48 /* String+Extensions.swift */; };
 		E354BB2E2B84BE5C0016EA48 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354BB2D2B84BE5C0016EA48 /* Plan.swift */; };
+		E358A51E2B907C4F005ABC18 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358A51D2B907C4F005ABC18 /* Store.swift */; };
+		E358A5202B907C6D005ABC18 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358A51F2B907C6D005ABC18 /* AppReducer.swift */; };
+		E358A5222B907C8E005ABC18 /* PlanReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358A5212B907C8E005ABC18 /* PlanReducer.swift */; };
+		E358A5262B907CCC005ABC18 /* PlansMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358A5252B907CCC005ABC18 /* PlansMiddleware.swift */; };
+		E358A52A2B907D37005ABC18 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358A5292B907D37005ABC18 /* Action.swift */; };
+		E358A52C2B907D48005ABC18 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358A52B2B907D48005ABC18 /* States.swift */; };
 		E36EAE052B8501F900BE2B50 /* ListPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36EAE042B8501F900BE2B50 /* ListPlansView.swift */; };
 		E36EAE072B8503C800BE2B50 /* TaskConfigurationTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36EAE062B8503C800BE2B50 /* TaskConfigurationTransformer.swift */; };
 		E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADDE652B7E5B7500A25036 /* AddEventView.swift */; };
@@ -33,21 +40,28 @@
 		0C8C38B178CEC2046F5D531A /* Pods-eTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTracker.release.xcconfig"; path = "Target Support Files/Pods-eTracker/Pods-eTracker.release.xcconfig"; sourceTree = "<group>"; };
 		27965C555EE14F3E479D0593 /* Pods_eTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96CACA5C7166CF3EB0A0A12 /* Pods-eTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTracker.debug.xcconfig"; path = "Target Support Files/Pods-eTracker/Pods-eTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		E3318EDF2B9092DB00647C36 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		E333E8BB2B7633DD00D6FEC5 /* eTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTrackerApp.swift; sourceTree = "<group>"; };
 		E333E8C02B7633DD00D6FEC5 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E333E8C52B7633DF00D6FEC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E333E8C72B7633DF00D6FEC5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E333E8C72B7633DF00D6FEC5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E333E8CA2B7633DF00D6FEC5 /* eTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eTracker.xcdatamodel; sourceTree = "<group>"; };
-		E333E8D52B76429D00D6FEC5 /* UIScreen+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utils.swift"; sourceTree = "<group>"; };
+		E333E8D52B76429D00D6FEC5 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		E333E8DA2B76660B00D6FEC5 /* CreatePlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlanView.swift; sourceTree = "<group>"; };
 		E333E8DE2B76760C00D6FEC5 /* EButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EButton.swift; path = eTracker/EButton.swift; sourceTree = SOURCE_ROOT; };
 		E333E8E02B76886800D6FEC5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E333E8E52B768ABF00D6FEC5 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		E354BB282B84A6080016EA48 /* ETextFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETextFormView.swift; sourceTree = "<group>"; };
-		E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validate.swift"; sourceTree = "<group>"; };
+		E354BB2A2B84ADCB0016EA48 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E354BB2D2B84BE5C0016EA48 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		E358A51D2B907C4F005ABC18 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E358A51F2B907C6D005ABC18 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		E358A5212B907C8E005ABC18 /* PlanReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanReducer.swift; sourceTree = "<group>"; };
+		E358A5252B907CCC005ABC18 /* PlansMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansMiddleware.swift; sourceTree = "<group>"; };
+		E358A5292B907D37005ABC18 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		E358A52B2B907D48005ABC18 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		E36EAE042B8501F900BE2B50 /* ListPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlansView.swift; sourceTree = "<group>"; };
 		E36EAE062B8503C800BE2B50 /* TaskConfigurationTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskConfigurationTransformer.swift; sourceTree = "<group>"; };
 		E3ADDE652B7E5B7500A25036 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
@@ -105,14 +119,14 @@
 		E333E8BD2B7633DD00D6FEC5 /* eTracker */ = {
 			isa = PBXGroup;
 			children = (
-				E354BB2C2B84BE450016EA48 /* Data */,
 				E333E8BE2B7633DD00D6FEC5 /* eTrackerApp.swift */,
+				E358A51C2B907C32005ABC18 /* Store */,
+				E354BB2C2B84BE450016EA48 /* Data */,
 				E333E8E42B768AA400D6FEC5 /* Navigation */,
-				E333E8D92B76659B00D6FEC5 /* Utils */,
+				E333E8D92B76659B00D6FEC5 /* Extension */,
 				E333E8D82B76658800D6FEC5 /* UIComponents */,
 				E333E8D72B76657D00D6FEC5 /* Screens */,
 				E333E8C22B7633DF00D6FEC5 /* Assets.xcassets */,
-				E333E8C72B7633DF00D6FEC5 /* Persistence.swift */,
 				E333E8C92B7633DF00D6FEC5 /* eTracker.xcdatamodeld */,
 				E333E8C42B7633DF00D6FEC5 /* Preview Content */,
 			);
@@ -131,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				E333E8C02B7633DD00D6FEC5 /* LandingView.swift */,
-				E333E8E02B76886800D6FEC5 /* HeaderView.swift */,
 				E333E8DA2B76660B00D6FEC5 /* CreatePlanView.swift */,
 				E3ADDE652B7E5B7500A25036 /* AddEventView.swift */,
 				E36EAE042B8501F900BE2B50 /* ListPlansView.swift */,
@@ -142,6 +155,7 @@
 		E333E8D82B76658800D6FEC5 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E333E8E02B76886800D6FEC5 /* HeaderView.swift */,
 				E333E8DE2B76760C00D6FEC5 /* EButton.swift */,
 				E3ADDE672B7E5C5800A25036 /* TextFieldModifier.swift */,
 				E3ADDE692B7E70FE00A25036 /* EDropDown.swift */,
@@ -150,13 +164,14 @@
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		E333E8D92B76659B00D6FEC5 /* Utils */ = {
+		E333E8D92B76659B00D6FEC5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E333E8D52B76429D00D6FEC5 /* UIScreen+Utils.swift */,
-				E354BB2A2B84ADCB0016EA48 /* String+Validate.swift */,
+				E333E8D52B76429D00D6FEC5 /* UIScreen+Extensions.swift */,
+				E354BB2A2B84ADCB0016EA48 /* String+Extensions.swift */,
+				E3318EDF2B9092DB00647C36 /* View+Extensions.swift */,
 			);
-			path = Utils;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E333E8E42B768AA400D6FEC5 /* Navigation */ = {
@@ -170,10 +185,56 @@
 		E354BB2C2B84BE450016EA48 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E333E8C72B7633DF00D6FEC5 /* DataController.swift */,
 				E354BB2D2B84BE5C0016EA48 /* Plan.swift */,
 				E36EAE062B8503C800BE2B50 /* TaskConfigurationTransformer.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E358A51C2B907C32005ABC18 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E358A51D2B907C4F005ABC18 /* Store.swift */,
+				E358A5282B907D21005ABC18 /* States */,
+				E358A5272B907D02005ABC18 /* Actions */,
+				E358A5242B907CB7005ABC18 /* Middlewares */,
+				E358A5232B907C9F005ABC18 /* Reducer */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		E358A5232B907C9F005ABC18 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				E358A51F2B907C6D005ABC18 /* AppReducer.swift */,
+				E358A5212B907C8E005ABC18 /* PlanReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		E358A5242B907CB7005ABC18 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				E358A5252B907CCC005ABC18 /* PlansMiddleware.swift */,
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		E358A5272B907D02005ABC18 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				E358A5292B907D37005ABC18 /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		E358A5282B907D21005ABC18 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				E358A52B2B907D48005ABC18 /* States.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,21 +352,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E333E8DF2B76760C00D6FEC5 /* EButton.swift in Sources */,
-				E333E8D62B76429D00D6FEC5 /* UIScreen+Utils.swift in Sources */,
-				E333E8C82B7633DF00D6FEC5 /* Persistence.swift in Sources */,
+				E358A52A2B907D37005ABC18 /* Action.swift in Sources */,
+				E333E8D62B76429D00D6FEC5 /* UIScreen+Extensions.swift in Sources */,
+				E333E8C82B7633DF00D6FEC5 /* DataController.swift in Sources */,
+				E358A51E2B907C4F005ABC18 /* Store.swift in Sources */,
+				E358A5202B907C6D005ABC18 /* AppReducer.swift in Sources */,
 				E36EAE052B8501F900BE2B50 /* ListPlansView.swift in Sources */,
 				E333E8C12B7633DD00D6FEC5 /* LandingView.swift in Sources */,
-				E354BB2B2B84ADCB0016EA48 /* String+Validate.swift in Sources */,
+				E354BB2B2B84ADCB0016EA48 /* String+Extensions.swift in Sources */,
 				E333E8CB2B7633DF00D6FEC5 /* eTracker.xcdatamodeld in Sources */,
 				E3ADDE662B7E5B7500A25036 /* AddEventView.swift in Sources */,
 				E333E8DB2B76660B00D6FEC5 /* CreatePlanView.swift in Sources */,
 				E3ADDE682B7E5C5800A25036 /* TextFieldModifier.swift in Sources */,
 				E3ADDE6A2B7E70FE00A25036 /* EDropDown.swift in Sources */,
+				E358A5262B907CCC005ABC18 /* PlansMiddleware.swift in Sources */,
 				E333E8BF2B7633DD00D6FEC5 /* eTrackerApp.swift in Sources */,
 				E354BB292B84A6080016EA48 /* ETextFormView.swift in Sources */,
 				E333E8E62B768ABF00D6FEC5 /* NavigationHelper.swift in Sources */,
 				E333E8E12B76886800D6FEC5 /* HeaderView.swift in Sources */,
+				E358A5222B907C8E005ABC18 /* PlanReducer.swift in Sources */,
+				E358A52C2B907D48005ABC18 /* States.swift in Sources */,
 				E354BB2E2B84BE5C0016EA48 /* Plan.swift in Sources */,
+				E3318EE02B9092DB00647C36 /* View+Extensions.swift in Sources */,
 				E36EAE072B8503C800BE2B50 /* TaskConfigurationTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

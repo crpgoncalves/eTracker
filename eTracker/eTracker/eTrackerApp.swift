@@ -10,11 +10,13 @@ import Foundation
 
 @main
 struct eTrackerApp: App {
-    
-    @StateObject private var dataController = DataController()
+    @StateObject var store = Store(reducer: appReducer,
+                                   state: AppState(),
+                                   middlewares: [plansMiddleware()])
     @ObservedObject var navigationHelper = NavigationHelper()
 
     var body: some Scene {
+
         WindowGroup {
             NavigationStack(path: $navigationHelper.path) {
                 LandingView()
@@ -30,7 +32,7 @@ struct eTrackerApp: App {
                     }
             }
             .environmentObject(navigationHelper)
-            .environment(\.managedObjectContext, dataController.container.viewContext)
+            .environmentObject(store)
         }
     }
 }

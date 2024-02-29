@@ -12,46 +12,43 @@ struct CreatePlanView: View {
     @State var name : String = ""
     
     var body: some View {
-        NavigationView{
-            
-            VStack {
-                ZStack {
-                    HeaderView(title: "eTracker",
-                               subtitle: "Create Plan",
-                               bgColor: .black)
-                    VStack {
-                        TextFormView { validate in
-                            VStack {
-                                TextField("name it", text: $name)
-                                    .validate {
-                                        name.validationState() == .valid
-                                    }
-                                    .modifier(CustomTFViewModifier(text: name))
-                            }
-                            .padding()
+        VStack {
+            ZStack {
+                HeaderView(title: "eTracker",
+                           subtitle: "Create Plan",
+                           bgColor: .black)
+                VStack {
+                    TextFormView { validate in
+                        VStack {
+                            TextField("name it", text: $name)
+                                .validate {
+                                    name.validationState() == .valid
+                                }
+                                .modifier(CustomTFViewModifier(text: name))
                         }
-                        EDropDown(
-                            selection: $selection1,
-                            options: [
-                                "Apple",
-                                "Google",
-                                "Amazon",
-                                "Facebook",
-                                "Instagram"
-                            ]
-                        )
-                        Spacer()
-                            .frame(height: 40)
-                        Spacer()
-                        EButton(title: "Create") {
-                        }
+                        .padding()
                     }
-                    .padding(.top, 150)
-                    
+                    EDropDown(
+                        selection: $selection1,
+                        options: [
+                            "Apple",
+                            "Google",
+                            "Amazon",
+                            "Facebook",
+                            "Instagram"
+                        ]
+                    )
+                    Spacer()
+                        .frame(height: 40)
+                    Spacer()
+                    EButton(title: "Create") {
+                    }
                 }
+                .padding(.top, 150)
+                
             }
         }
-        .navigationBarBackButtonHidden()
+        .embedInNavigationView()
     }
 }
 
