@@ -19,15 +19,14 @@ struct ListPlansView: View {
                 HeaderView(title: "eTracker",
                            subtitle: "List Plans",
                            bgColor: .black)
-                VStack {
-                    List(store.state.plans.plan) {
-                        Text($0.name ?? "")
-                    }
-                    EButton(title: "Add Event") {
-                        store.dispatch(action: SavePlan(name: "nome" + "\(Int.random(in: 1..<200))"))
-                        
-                    }
+                List(store.state.plans.plan) {
+                    Text($0.name ?? "")
                 }
+                .padding(.top, 100)
+                .listStyle(.plain)
+            }
+            EButton(title: "Add Event") {
+                store.dispatch(action: SavePlan(name: "nome" + "\(Int.random(in: 1..<200))"))
                 
             }
         }.embedInNavigationView()
